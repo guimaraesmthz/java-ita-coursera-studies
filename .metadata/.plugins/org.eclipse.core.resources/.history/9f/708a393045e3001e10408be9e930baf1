@@ -1,0 +1,19 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ImcTest {
+
+	@Test
+	void testIMC() {
+		Paciente p1 = new Paciente(75.0, 1.80);
+		Paciente p2 = new Paciente(75.0, 1.80);
+		Paciente p3 = new Paciente(75.0, 1.80);
+		Paciente p4 = new Paciente(75.0, 1.80);
+		Paciente p5 = new Paciente(75.0, 1.80);
+		Paciente p6 = new Paciente(75.0, 1.80);
+		Paciente p7 = new Paciente(75.0, 1.80);
+		Paciente p8 = new Paciente(75.0, 1.80);
+	}
+
+}

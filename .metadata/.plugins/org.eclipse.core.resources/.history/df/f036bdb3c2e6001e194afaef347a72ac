@@ -1,0 +1,13 @@
+
+public class LoginException extends Exception {
+	
+	private String login;
+
+	public LoginException(String message, String login) {
+		super(message);
+		
+	};
+	
+	
+	
+}

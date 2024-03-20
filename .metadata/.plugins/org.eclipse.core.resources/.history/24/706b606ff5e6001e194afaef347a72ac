@@ -1,0 +1,24 @@
+
+public class FabricaMecanicaDoJogo {
+	
+	private String dificuldade;
+	private BancoDePalavras bancoPalavras = new BancoDePalavras();
+
+	FabricaMecanicaDoJogo(String dificuldade){
+		if(dificuldade == "Fácil")
+			this.dificuldade = "Fácil";
+		else
+			this.dificuldade = "Difícil";
+	};
+	
+	public MecanicaDoJogo retornaMecanica() {
+		MecanicaDoJogo mecFacil = new JogoFacil();
+		MecanicaDoJogo mecDificil = new JogoDificil();
+		
+		if(this.dificuldade == "Fácil")
+			return mecFacil;
+		else
+			return mecDificil;
+	};
+	
+}

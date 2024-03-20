@@ -1,0 +1,7 @@
+import java.util.List;
+
+public class BancoDePalavras {
+
+	private List<String> palavras = new List<String>();
+	
+}

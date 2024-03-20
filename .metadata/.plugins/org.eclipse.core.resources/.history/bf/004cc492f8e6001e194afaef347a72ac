@@ -1,0 +1,6 @@
+
+public interface MecanicaDoJogo {
+
+	public String iniciarJogo(String tentativa);
+	
+}

@@ -1,0 +1,12 @@
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class TestEmbaralhador {
+
+	@Test
+	void test() {
+		Embaralhador embaralha = new EmbaralhadorFacil();
+		embaralha.embaralharPalavra("matheus");
+	}
+
+}

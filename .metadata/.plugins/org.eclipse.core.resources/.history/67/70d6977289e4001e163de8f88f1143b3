@@ -1,0 +1,21 @@
+
+public class Carro extends CarroDeCorrida {
+
+	private int potencia;
+	
+	public Carro(String nome,int potencia, int velocidadeMaxima) {
+		this.potencia = potencia;
+		this.velocidade = 0;
+		this.nome = nome;
+		this.velocidadeMaxima = velocidadeMaxima;
+	};
+	
+	public void acelerar() {
+		velocidade += potencia;
+		if(velocidade > velocidadeMaxima)
+			velocidade = velocidadeMaxima;
+	};
+	
+
+
+}

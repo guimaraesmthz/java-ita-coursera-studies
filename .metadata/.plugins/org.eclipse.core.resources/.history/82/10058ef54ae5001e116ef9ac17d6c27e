@@ -1,0 +1,17 @@
+
+public class Autoridade{
+
+	private String nome;
+	private String sobrenome;
+	private FormatadorNome format;
+	
+	Autoridade(String tipo){
+		
+	}
+	
+	public void getTratamento() {
+		format.formatarNome(nome, sobrenome);
+	}
+
+	
+}

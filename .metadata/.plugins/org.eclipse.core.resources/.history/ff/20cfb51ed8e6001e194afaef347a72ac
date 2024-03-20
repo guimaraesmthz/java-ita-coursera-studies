@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+public class BancoDePalavras {
+
+	private static ArrayList<String> palavras = new ArrayList<String>();
+	
+}

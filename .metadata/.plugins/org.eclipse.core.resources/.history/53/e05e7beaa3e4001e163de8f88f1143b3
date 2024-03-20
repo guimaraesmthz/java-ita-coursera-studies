@@ -1,0 +1,11 @@
+import java.util.HashMap;
+
+public class CarrinhoDeCompras {
+
+	HashMap<String, Integer> carrinho = new HashMap<String, Integer>();
+	
+	public void adicionarAoCarrinho() {
+		
+	};
+	
+}

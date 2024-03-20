@@ -1,0 +1,31 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ImcTest {
+
+	@Test
+	void testIMC() {
+		Paciente p1 = new Paciente(75.0, 1.80);
+		Paciente p2 = new Paciente(90.2, 1.56);
+		Paciente p3 = new Paciente(131.4, 1.94);
+		Paciente p4 = new Paciente(110.0, 1.60);
+		Paciente p5 = new Paciente(54.4, 1.75);
+		Paciente p6 = new Paciente(78.0, 1.55);
+		Paciente p7 = new Paciente(88.0, 1.76);
+		Paciente p8 = new Paciente(66.0, 1.66);
+		
+		System.out.println(p1.calcularIMC());
+		System.out.println(p2.calcularIMC());
+		System.out.println(p3.calcularIMC());
+		System.out.println(p4.calcularIMC());
+		System.out.println(p5.calcularIMC());
+		System.out.println(p6.calcularIMC());
+		System.out.println(p7.calcularIMC());
+		System.out.println(p8.calcularIMC());
+		
+		//assertEquals();
+	}
+
+}

@@ -1,0 +1,27 @@
+
+public class JogoFacil implements MecanicaDoJogo {
+	
+	public int tentativas = 5;
+	public double pontos = 0;
+	private final double multiplicador = 2;
+	private String palavraCerta;
+    private String palavraEmbaralhada; 
+	
+
+	JogoFacil(String palavraCerta, String palavraEmbaralhada){
+		this.palavraCerta = palavraCerta;
+		this.palavraEmbaralhada = palavraEmbaralhada;
+	};
+	
+	@Override
+	public boolean iniciarJogo(String tentativa) {
+		if(tentativa == this.palavraCerta) {
+			this.pontos = (pontos + 1) * (multiplicador);
+			this.tentativas = this.tentativas -1;
+			return true;
+		}else{
+			this.tentativas = this.tentativas -1;
+			return false;
+		}
+	};	
+};

@@ -1,0 +1,19 @@
+import java.util.Random;
+
+public class EmbaralhadorFacil implements Embaralhador{
+	char[] novaPalavra;
+	@Override
+	public String embaralharPalavra(String palavra) {
+		char[] novaPalavra = palavra.toCharArray();
+		int tamanho = novaPalavra.length;
+		Random ran = new Random();
+		for(int i = 0; i < tamanho-1;i++) {
+			int random = ran.nextInt(0,tamanho-1);
+			char aux = novaPalavra[i];
+			novaPalavra[i] = novaPalavra[random];
+			novaPalavra[random] = aux;
+		};
+		return 
+	};
+	
+}

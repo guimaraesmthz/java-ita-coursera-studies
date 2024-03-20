@@ -1,0 +1,13 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CarroTeste {
+
+	@Test
+	public void test() {
+		Carro c1 = new Carro(10, "Civic");
+		assertEquals(10, c1.);
+	}
+
+}

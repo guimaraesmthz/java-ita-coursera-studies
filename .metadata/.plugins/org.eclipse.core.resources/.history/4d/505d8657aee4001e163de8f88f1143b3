@@ -1,0 +1,17 @@
+import java.util.HashMap;
+import java.util.Objects;
+
+public class CarrinhoDeCompras {
+
+	HashMap<Produto, Integer> carrinho = new HashMap<Produto, Integer>();
+	
+	public void adicionaProduto(Produto p,int quantidade) {
+		if(carrinho.containsKey(p)) {
+			System.out.println("Already exists.");
+		}else {
+			carrinho.put(p, quantidade);
+		}
+	};
+	
+	
+}

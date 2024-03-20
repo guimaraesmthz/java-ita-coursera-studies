@@ -1,0 +1,7 @@
+
+public class CarroEletrico extends Carro{
+
+	public CarroEletrico(int potencia, String nome) {
+		super(potencia, nome);
+	}
+}

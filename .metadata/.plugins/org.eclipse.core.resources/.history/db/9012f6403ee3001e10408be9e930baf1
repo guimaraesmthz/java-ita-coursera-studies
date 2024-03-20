@@ -1,0 +1,32 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.*;
+import org.junit.jupiter.api.Test;
+
+class PizzaTest {
+	
+	@Before
+	void criarPizza() {
+		
+	};
+	
+	@After
+	void zerarIngredientes() {
+		Pizza.zerarIngredientes();
+	};
+	
+	@Test
+	void verificarPrecoPizza() {
+		
+		pizza.adicionarIngrediente("orégano", 5);
+		pizza.adicionarIngrediente("salame", 10);
+		pizza.adicionarIngrediente("gorgonzola", 3);
+		assertEquals(20, pizza.getPreco());
+	};
+	
+	@Test
+	void verificarIngredientes() {
+		
+	};
+
+}

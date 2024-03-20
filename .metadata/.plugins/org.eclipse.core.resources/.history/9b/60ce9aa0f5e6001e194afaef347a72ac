@@ -1,0 +1,25 @@
+
+public class FabricaMecanicaDoJogo {
+	
+	private String dificuldade;
+	private BancoDePalavras bancoPalavras = new BancoDePalavras();
+	private FabricaEmbaralhadores fabricaEmbaralha = new FabricaEmbaralhadores();
+
+	FabricaMecanicaDoJogo(String dificuldade){
+		if(dificuldade == "Fácil")
+			this.dificuldade = "Fácil";
+		else
+			this.dificuldade = "Difícil";
+	};
+	
+	public MecanicaDoJogo retornaMecanica() {
+		MecanicaDoJogo mecFacil = new JogoFacil(bancoPalavras.palavraAleatoria(),fabricaEmbaralha.retornarEmbaralhador());
+		MecanicaDoJogo mecDificil = new JogoDificil();
+		
+		if(this.dificuldade == "Fácil")
+			return mecFacil;
+		else
+			return mecDificil;
+	};
+	
+}

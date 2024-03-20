@@ -1,0 +1,12 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ImcTest {
+
+	@Test
+	void testIMC() {
+		Paciente p1 = new Paciente(75.0, 1.80);
+	}
+
+}

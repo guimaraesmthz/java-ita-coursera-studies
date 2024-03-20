@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Objects;
+
+public class CarrinhoDeCompras {
+
+	HashMap<Produto, Integer> carrinho = new HashMap<Produto, Integer>();
+	
+	public void adicionaProduto(Produto p,int quantidade) {
+		if(carrinho.containsKey(p)) {
+			int qntd = carrinho.get(p);
+			carrinho.replace(p, qntd+quantidade);
+		}else {
+			carrinho.put(p, quantidade);
+		}
+	};
+	
+	
+	
+}

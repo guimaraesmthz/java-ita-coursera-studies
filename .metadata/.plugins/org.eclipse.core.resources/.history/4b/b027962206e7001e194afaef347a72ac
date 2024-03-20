@@ -1,0 +1,42 @@
+
+public class JogoFacil implements MecanicaDoJogo{
+	
+	private int tentativas = 5;
+	private double pontos = 0;
+	private final double multiplicador = 2;
+	private String palavraCerta;
+    private String palavraEmbaralhada; 
+	
+	JogoFacil(String palavraCerta, String palavraEmbaralhada){
+		this.palavraCerta = palavraCerta;
+		this.palavraEmbaralhada = palavraEmbaralhada;
+	};
+	
+	@Override
+	public boolean tentativasRestantes() {
+		if(this.tentativas > 0)
+			return true;
+		else
+			return false;
+	};
+	
+	@Override
+	public double pontuacaoDoJogo() {
+		return this.pontos;
+	};
+	
+	@Override
+	public boolean iniciarJogo(String tentativa) {
+		if(tentativa.equals(this.palavraCerta)) {
+			this.pontos = (pontos + 1) * (multiplicador);
+			this.tentativas = this.tentativas -1;
+			System.out.println(this.tentativas);
+			return true;
+		}else{
+			this.tentativas = this.tentativas -1;
+			System.out.println(this.tentativas);
+			return false;
+		}
+		System.out.println("oi");
+	};	
+};

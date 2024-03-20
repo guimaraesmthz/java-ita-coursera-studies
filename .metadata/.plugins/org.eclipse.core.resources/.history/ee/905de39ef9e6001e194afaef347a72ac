@@ -1,0 +1,15 @@
+public class JogoDificil implements MecanicaDoJogo {
+	
+	private int tentativas = 3;
+	private int pontos = 0;
+	private final double multiplicador = 2;
+	
+
+	@Override
+	public void mecanicaDoJogo(String palavra, FabricaEmbaralhadores  embaralhador) {
+		for(int i = 0; i <= tentativas; i++) {
+			
+		}
+	};
+
+}

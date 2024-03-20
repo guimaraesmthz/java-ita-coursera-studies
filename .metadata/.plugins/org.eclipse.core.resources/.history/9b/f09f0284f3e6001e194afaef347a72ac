@@ -1,0 +1,10 @@
+
+public class JogoDificil implements MecanicaDoJogo {
+
+	@Override
+	public String retornaMecanica() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

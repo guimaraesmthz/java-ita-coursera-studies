@@ -1,0 +1,12 @@
+import org.junit.Test;
+
+public class TesteCarro {
+
+	@Test
+	public void testAcelerar() {
+		Carro c  = new Carro(10, "Civic");
+		c.acelerar();
+		
+	}
+
+}

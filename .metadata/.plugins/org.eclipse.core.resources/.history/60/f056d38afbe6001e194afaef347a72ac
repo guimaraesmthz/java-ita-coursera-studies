@@ -1,0 +1,13 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		FabricaMecanicaDoJogo fabrica = new FabricaMecanicaDoJogo("Fácil");
+		MecanicaDoJogo jogo = fabrica.retornaMecanica();
+		boolean acertei = jogo.iniciarJogo("veleiro");
+		System.out.println(acertei);
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class ProdutoComTamanho {
+
+	public ProdutoComTamanho() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

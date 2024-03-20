@@ -1,0 +1,9 @@
+
+public class FabricaEmbaralhadores {
+
+	public Embaralhador retornarEmbaralhador() {
+		Embaralhador embaralhadorFacil = new EmbaralhadorFacil();
+		Embaralhador[] embaralhadores = {}
+	};
+	
+}

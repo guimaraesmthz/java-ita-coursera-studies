@@ -1,0 +1,35 @@
+
+public class Autoridade implements FormatadorNome{
+
+	private String nome;
+	private String sobrenome;
+	private String tipo;
+	private String sexo;
+	
+	Autoridade(String nome, String sobrenome,String tipo, String sexo){
+		this.tipo = tipo;
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.sexo = sexo;
+	};
+	
+	public void getTratamento(String nome,String sobrenome) {
+		FormatadorNome.formatarNome(nome, sobrenome);
+	}
+	
+	@Override
+	public String formatarNome(String nome,String sobrenome) {
+		if(this.tipo == "Informal") {
+			return nome;
+		}else if(this.tipo == "Respeitoso") {
+			if(this.sexo == "Masculino")
+				return "Sr."+sobrenome;
+			else
+				return "Sra."+sobrenome;
+		}else{
+			return "Magnífico"+nome+sobrenome;
+		}
+		
+	};
+	
+}

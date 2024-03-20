@@ -1,0 +1,14 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CarrinhoTeste {
+
+	@Test
+	void adicionarProdutos() {
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		Produto produto1 = new Produto();
+		
+	}
+
+}

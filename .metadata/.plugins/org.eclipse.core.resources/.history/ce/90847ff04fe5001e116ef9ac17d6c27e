@@ -1,0 +1,13 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TestAutoridade {
+
+	@Test
+	void testAutoridadeInformal() {
+		Autoridade autoridade = new Autoridade("Matheus", "Guimarães", "ComTítulo", "Masculinho");
+		autoridade.getTratamento("Matheus","Guimarães");
+	}
+
+}

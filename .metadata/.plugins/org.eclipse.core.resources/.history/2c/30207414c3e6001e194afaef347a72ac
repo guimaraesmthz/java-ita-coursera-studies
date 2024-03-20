@@ -1,0 +1,15 @@
+
+public class Usuario {
+
+	private String login;
+	
+	Usuario(){
+		
+	}
+
+	protected String getLogin() {
+		return login;
+	}
+
+	
+}

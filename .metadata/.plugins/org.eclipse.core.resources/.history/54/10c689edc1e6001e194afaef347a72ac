@@ -1,0 +1,15 @@
+
+public class Usuario {
+
+	private String login;
+	
+	Usuario(){
+		
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	
+}

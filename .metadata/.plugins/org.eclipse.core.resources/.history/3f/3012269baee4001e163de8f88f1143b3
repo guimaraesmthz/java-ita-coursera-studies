@@ -1,0 +1,16 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto("Playstation", "PS2024", 5.000);
+		Produto p2 = new Produto("Playstation","PS2024", 6.000);
+		Produto p3 = new ProdutoComTamanho("Porta Fogo","PTFIRE",10.000,2.0);
+		Produto p4 = new ProdutoComTamanho("Porta Fogo","PTFIRE",15.000,3.0);
+		
+		CarrinhoDeCompras c = new CarrinhoDeCompras();
+		c.adicionaProduto(p3, 2);
+		c.adicionaProduto(p4, 2);
+	};
+
+}

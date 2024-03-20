@@ -1,0 +1,20 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.*;
+import org.junit.jupiter.api.Test;
+
+class PizzaTest {
+	
+	Pizza pizza = new Pizza();
+
+	@After
+	void zerarIngredientes() {
+		Pizza.zerarIngredientes();
+	}
+	
+	@Test
+	void test() {
+		
+	}
+
+}

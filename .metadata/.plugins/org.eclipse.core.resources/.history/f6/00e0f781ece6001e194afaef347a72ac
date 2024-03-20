@@ -1,0 +1,8 @@
+
+public class FabricaEmbaralhadores {
+
+	public Embaralhador retornarEmbaralhador() {
+		
+	};
+	
+}

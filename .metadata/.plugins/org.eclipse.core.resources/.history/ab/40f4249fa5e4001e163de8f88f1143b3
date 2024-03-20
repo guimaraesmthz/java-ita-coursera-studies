@@ -1,0 +1,6 @@
+
+public class ProdutoComTamanho extends Produto{
+
+	private double tamanho;
+	
+}

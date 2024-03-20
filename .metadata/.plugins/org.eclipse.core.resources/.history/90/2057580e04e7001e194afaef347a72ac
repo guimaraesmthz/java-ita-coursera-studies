@@ -1,0 +1,35 @@
+
+public class JogoDificil implements MecanicaDoJogo {
+	
+	private int tentativas = 2;
+	private double pontos = 0;
+	private final double multiplicador = 4;
+	private String palavraCerta;
+    private String palavraEmbaralhada; 
+	
+
+	JogoDificil(String palavraCerta, String palavraEmbaralhada){
+		this.palavraCerta = palavraCerta;
+		this.palavraEmbaralhada = palavraEmbaralhada;
+	};
+	
+	@Override
+	public boolean tentativasRestantes() {
+		if(this.tentativas > 0)
+			return true;
+		else
+			return false;
+	};
+	
+	@Override
+	public boolean iniciarJogo(String tentativa) {
+		if(tentativa == this.palavraCerta) {
+			this.pontos = (pontos + 1) * (multiplicador);
+			this.tentativas = this.tentativas -1;
+			return true;
+		}else{
+			this.tentativas = this.tentativas -1;
+			return false;
+		}
+	};	
+};

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Esolha a dificuldade do jogo, digite Fácil ou Difícil: ");
+		String dificuldae = scanner.nextLine();
+		
+		
+		FabricaMecanicaDoJogo fabrica = new FabricaMecanicaDoJogo("Fácil");
+		MecanicaDoJogo jogo = fabrica.retornaMecanica();
+		String palavraEmbaralhada = fabrica.palavraEmbaralhada;
+		
+		
+		
+		
+		while(jogo.tentativasRestantes()) {
+			System.out.println("Qual é essa palavra: "+ palavraEmbaralhada + "?");
+			String resposta = scanner.nextLine();
+		}
+		
+		
+	}
+
+}

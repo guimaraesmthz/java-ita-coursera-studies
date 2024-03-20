@@ -1,0 +1,68 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.*;
+import org.junit.jupiter.api.Test;
+
+class PizzaTest {
+	
+	Pizza pizza = new Pizza();
+	CarrinhoDeCompra carrinho = new CarrinhoDeCompra();
+	
+	@After
+	void zerarIngredientes() {
+		Pizza.zerarIngredientes();
+		CarrinhoDeCompra.zerarCarrinho();
+	};
+	
+	@Test
+	void verificarPrecoPizza() {
+		pizza.adicionarIngrediente("orégano", 5);
+		pizza.adicionarIngrediente("salame", 10);
+		pizza.adicionarIngrediente("gorgonzola", 3);
+		assertEquals(20, pizza.getPreco());
+	};
+	
+	@Test
+	void verificarIngredientes() {
+		pizza.adicionarIngrediente("orégano", 5);
+		pizza.adicionarIngrediente("salame", 10);
+		pizza.adicionarIngrediente("gorgonzola", 3);
+		pizza.adicionarIngrediente("mostarda", 1);
+		pizza.adicionarIngrediente("mel", 2);
+		assertEquals(5, pizza.qntdIngPizza);
+	};
+	
+	@Test
+	void verificarCarrinhoCompras() {
+		Pizza p2 = new Pizza();
+		Pizza p3 = new Pizza();
+		
+		pizza.adicionarIngrediente("salame", 10);
+		
+		p2.adicionarIngrediente("orégano", 5);
+		p2.adicionarIngrediente("salame", 10);
+		p2.adicionarIngrediente("gorgonzola", 3);
+		p2.adicionarIngrediente("mostarda", 1);
+		p2.adicionarIngrediente("mel", 2);
+		p2.adicionarIngrediente("cheddar", 2);
+		
+		p3.adicionarIngrediente("salame", 10);
+		p3.adicionarIngrediente("gorgonzola", 3);
+		p3.adicionarIngrediente("mostarda", 1);
+		
+		carrinho.adicionarAoCarrinho(pizza);
+		carrinho.adicionarAoCarrinho(p2);
+		carrinho.adicionarAoCarrinho(p3);
+		
+		assertEquals(58, CarrinhoDeCompra.valorTotal);
+		
+	};
+	
+	@Test
+	void carrinhoRejeitaPizza() {
+		carrinho.adicionarAoCarrinho(pizza);
+		pizza.adicionarIngrediente("feijao", 5);
+		assertNotEquals(15, CarrinhoDeCompra.valorTotal);
+	};
+
+}

@@ -1,0 +1,10 @@
+
+public class Principal {
+
+	public Principal() {
+		
+		CarroSoma carro = new CarroSoma("Civic", 2, 300);
+		System.out.println(carro.nome);
+	}
+
+}

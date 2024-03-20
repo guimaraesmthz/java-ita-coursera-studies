@@ -1,0 +1,8 @@
+
+public class Autoridade {
+
+	private String nome;
+	private String sobrenome;
+	FormatadorNome format = new FormatadorNome();
+	
+}

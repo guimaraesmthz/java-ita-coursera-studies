@@ -1,0 +1,13 @@
+
+public class FabricaMecanicaDoJogo {
+	
+	private String dificuldade;
+
+	FabricaMecanicaDoJogo(String dificuldade){
+		if(dificuldade == "Fácil")
+			this.dificuldade = "Fácil";
+		else
+			this.dificuldade = "Difícil";
+	};
+	
+}

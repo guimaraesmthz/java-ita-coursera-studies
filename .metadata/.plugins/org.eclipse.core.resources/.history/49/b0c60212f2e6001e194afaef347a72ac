@@ -1,0 +1,10 @@
+
+public class FabricaMecanicaDoJogo {
+	
+	private String dificuldade;
+
+	FabricaMecanicaDoJogo(String dificuldade){
+		
+	};
+	
+}

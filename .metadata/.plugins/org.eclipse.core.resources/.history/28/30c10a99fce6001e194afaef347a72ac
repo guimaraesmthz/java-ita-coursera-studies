@@ -1,0 +1,5 @@
+
+public interface Embaralhador {
+	
+	public char[] embaralharPalavra(String palavra);
+}
